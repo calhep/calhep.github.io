@@ -22,10 +22,10 @@ Vue.use(IconsPlugin)
 Vue.config.productionTip = false
 
 const routes = [
-  { path: '/home', alias: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
-  { path: '/resume', component: ResumePage },
-  { path: '/projects', component: ProjectsPage }
+  { path: '/home', mode: 'harsh', alias: '/', component: HomePage },
+  { path: '/about', mode: 'harsh', component: AboutPage },
+  { path: '/resume', mode: 'harsh',  component: ResumePage },
+  { path: '/projects', mode: 'harsh', component: ProjectsPage }
 ]
 
 // Create the router instance and pass the `routes` option
