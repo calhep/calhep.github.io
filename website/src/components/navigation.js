@@ -1,17 +1,20 @@
 import React from 'react';
-import { Navbar, Nav,  NavDropdown, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import resumepdf from '../resume/Callum_Hepworth_Resume.pdf'
 
 class Navigation extends React.Component {
   render() {
     return (
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">Callum Hepworth</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">Callum Hepworth</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+              <Nav.Link href={resumepdf}>Resume</Nav.Link> 
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
