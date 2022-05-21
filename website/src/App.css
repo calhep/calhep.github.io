@@ -12,9 +12,9 @@
   line-height: 1.428;
 }
 
-#footer {
+footer {
   background: #1b1b1b;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 #copyright {
@@ -22,4 +22,42 @@
   text-align: center;
   margin: 2rem 0 0;
   font-size: .9rem;
+}
+
+ul > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+ul {
+  padding: 0
+}
+
+.fa-icon:hover {
+  color: grey;
+}
+
+.fa-icon {
+  color: white
+}
+
+.about-me {
+  background-image: url('./images/pexels-michał-osiński-3454270.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 75vh;
+}
+
+.project-peek {
+  background-color: grey;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.project-card {
+  padding-right: 0
 }
