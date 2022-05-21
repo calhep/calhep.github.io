@@ -19,7 +19,7 @@ class Footer extends React.Component {
                         <a href="https://github.com/calhep">
                             <FontAwesomeIcon icon={faGithub} size='xl' className="fa-icon" />
                         </a>
-                    </li> 
+                    </li>
                     <li>
                         <a href="https://www.linkedin.com/in/callumhepworth/">
                             <FontAwesomeIcon icon={faLinkedin} size='xl' className="fa-icon" />
@@ -28,7 +28,7 @@ class Footer extends React.Component {
                     <li>
                         <a href="mailto:callumahepworth@gmail.com">
                             <FontAwesomeIcon icon={faSquareEnvelope} size='xl' className="fa-icon" />
-                        </a> 
+                        </a>
                     </li>
                 </ul>
 
