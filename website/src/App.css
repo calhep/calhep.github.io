@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+}
+
 .NavTitle {
   font-size: 30px;
   line-height: 1.428;
@@ -26,7 +34,6 @@ footer {
 
 ul > li {
   display: inline-block;
-  /* You can also add some margins here to make it look prettier */
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -43,21 +50,36 @@ ul {
   color: white
 }
 
-.about-me {
-  background-image: url('./images/pexels-michał-osiński-3454270.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 75vh;
+.sidebar .body {
+  border: 3px solid black;
+  padding: 15px;
+  background-color: #fff;
 }
 
-.project-peek {
-  background-color: grey;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+.body {
+  width: 60%;
+  height: 100vh;
+  text-align: left;
 }
 
-.project-card {
-  padding-right: 0
+.sidebar {
+  width: 25%;
+  height: 25vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+}
+
+.wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.profile-img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-pad {
+  margin-top: 69px;
 }
