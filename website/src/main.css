@@ -1,0 +1,75 @@
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+  }
+
+  .body {
+    width: 75%;
+    text-align: left;
+    overflow: auto;
+  }
+  
+  .sidebar {
+    width: 20%;
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .profile-img {
+    padding: 5px;
+  }
+
+  .profile-img img {
+      max-width: 175px;
+      border-radius: 50%;
+  }
+
+  .profile-content {
+      text-align: left;
+      padding: 5px;
+  }
+
+  .profile-name {
+      font-size: 1rem;
+  }
+
+  .profile-text {
+      font-size: 0.75rem;
+  }
+  
+ 
+  
+  /* @media (min-width: 80em) {
+    #main {
+      max-width: 1280px;
+    }
+  } */
+
+ 
+
+.sections {
+    position: fixed;
+    z-index:10;
+    background-color: white;
+    padding-top: 75px;
+    width: 65%;
+}
+
+.projects {
+    padding-top:145px;
+    z-index:5;
+}
+
+.sections ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

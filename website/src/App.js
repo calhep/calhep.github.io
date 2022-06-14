@@ -1,21 +1,13 @@
 import React from 'react'
-// import logo from './logo.svg';
 import './App.css';
-import { Routes, Route } from "react-router-dom";
 
 import Main from './components/main'
-import Header from './components/header'
-import Projects from './components/projects'
 import Footer from './components/footer'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route exact path='/' element={<Main />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes>
+      <Main />
       <Footer />
     </div>
   );

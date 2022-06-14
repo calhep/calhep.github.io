@@ -9,6 +9,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import '../App.js'
+import '../footer.css'
 
 class Footer extends React.Component {
     render() {
