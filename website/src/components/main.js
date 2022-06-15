@@ -3,6 +3,7 @@ import React from 'react'
 import '../main.css';
 
 import doggo from "../images/IMG_9120.png"
+import resume from "../resume/Callum_Hepworth_Resume.pdf"
 
 
 
@@ -27,9 +28,9 @@ class Main extends React.Component {
                     <div className="body">
                         <div className="sections">
                             <ul>
-                                <li>Coffee</li>
-                                <li>Tea</li>
-                                <li>Milk</li>
+                                <li><a href="default.asp">About Me</a></li>
+                                <li><a href="news.asp">Projects</a></li>
+                                <li><a href={resume}>CV</a></li>
                             </ul>
                             <hr />
                         </div>
@@ -53,7 +54,7 @@ class Main extends React.Component {
                             Curabitur elementum lobortis diam, porta ornare risus viverra a. Suspendisse massa lorem, tempor vel congue mollis, rhoncus in risus. Nam suscipit elit id turpis placerat interdum. Aenean aliquet elit elit, non varius odio iaculis vel. Fusce lacinia consectetur orci ac aliquet. Donec auctor pulvinar sem, sed pulvinar nibh lobortis a. Integer consectetur et orci non eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas rhoncus lacus ut blandit.
 
                             Duis vitae nisl vitae turpis euismod iaculis ac vitae sapien. Duis dictum pretium ipsum in fringilla. Suspendisse potenti. Praesent ultricies ligula a diam congue, at facilisis justo luctus. Praesent maximus nibh nec mauris commodo molestie a eu orci. Vestibulum non tortor pellentesque, varius ante sodales, rhoncus lectus. Duis neque felis, vestibulum ac nibh id, tristique maximus dolor. Vestibulum tincidunt lacus nunc, in iaculis justo ultricies eu. Proin vulputate, odio vitae posuere interdum, nibh mauris fringilla orci, et egestas sapien risus sed metus. Morbi blandit a diam non pellentesque. Etiam eros orci, placerat a massa ac, eleifend pretium massa. Quisque eget semper lacus, sed consequat neque. Sed nunc lacus, vehicula at vestibulum ut, gravida eu nulla. In sit amet tortor varius, mollis lectus vel, aliquet nibh. Vivamus sit amet justo libero. Vestibulum porta efficitur arcu in fringilla.
-                            </div>
+                        </div>
                     </div>
 
                     {/* Projects
