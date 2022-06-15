@@ -8,24 +8,58 @@
     --max-width: 750px;
   }
 
-  .profile-img img {
-    max-width: 100px !important;
+  .sidebar .profile-img img {
+    max-width: 100px;
 }
 }
 
 @media only screen and (max-width: 765px) {
-  .sidebar {
-    display: none;
+  .wrapper .sidebar {
+    display: table-cell;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0px;
+    padding: 5px 5px 5px 0;
   }
 
-  .body {
-    margin-left: 25px;
-    width: 94vw !important;
+  .sidebar .profile-img img {
+    max-width: 65px;
   }
 
-  .sections {
-    width: 94vw !important;
+  .sidebar .profile-img {
+    padding-left: 0;
+  }
+
+  .wrapper .body {
+    width: 100% ;
+  }
+
+  .body .sections {
+    width: 100%  ;
+    position: relative;
+    padding-top: 0;
   } 
+
+  .sidebar .profile-content {
+    padding-left: 15px;
+  }
+  
+  .profile-content .profile-name {
+    margin-bottom: 3px;
+  }
+  
+  .profile-content .profile-text {
+    margin-bottom: 0;
+  }
+
+  #main .wrapper {
+    display: block;
+  }
+
+  .body .body-content {
+    padding-top: 0;
+  }
 }
 
 #main {
@@ -35,7 +69,7 @@
   }
 
   .body {
-    width: calc(0.75 * var(--max-width));
+    width: calc(0.72 * var(--max-width));
     text-align: left;
     overflow: auto;
   }
@@ -51,10 +85,12 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0 20px;
   }
   
   .profile-img {
     padding: 5px;
+    display: inherit;
   }
 
   .profile-img img {
@@ -65,6 +101,8 @@
   .profile-content {
       text-align: left;
       padding: 5px;
+      display: inherit;
+      vertical-align: middle;
   }
 
   .profile-name {
@@ -80,7 +118,7 @@
     z-index:10;
     background-color: white;
     padding-top: 75px;
-    width: calc(0.75 * var(--max-width));
+    width: calc(0.72 * var(--max-width));
 }
 
 .body-content {
@@ -105,4 +143,16 @@
     text-align: center;
     text-decoration: none;
     text-decoration: underline;
+}
+
+.header-mobile .profile-content {
+  padding-left: 15px;
+}
+
+.header-mobile .profile-content .profile-name {
+  margin-bottom: 3px;
+}
+
+.header-mobile .profile-content .profile-text {
+  margin-bottom: 0;
 }
