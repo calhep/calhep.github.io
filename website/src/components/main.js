@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Routes, Route } from "react-router-dom";
+import { Link, useRoutes } from "react-router-dom";
 
 import '../main.css';
 
@@ -8,6 +8,16 @@ import resume from "../resume/Callum_Hepworth_Resume.pdf"
 
 import Projects from './projects';
 import About from './about';
+
+function Body() {
+    let element = useRoutes([
+        { path: "/", element: <About /> },
+        { path: "/about", element: <About /> },
+        { path: "/projects", element: <Projects /> }
+    ]);
+
+    return element;
+}
 
 class Main extends React.Component {
     render() {
@@ -30,17 +40,14 @@ class Main extends React.Component {
                     <div className="body">
                         <div className="sections">
                             <ul>
-                                <li><Link to="/about">About Me</Link></li>
+                                <li><Link to="/">About Me</Link></li>
                                 <li><Link to="/projects">Projects</Link></li>
                                 <li><a href={resume}>CV</a></li>
                             </ul>
                             <hr />
                         </div>
                         <div className="body-content">
-                            <Routes>
-                                <Route path="about" element={<About />} />
-                                <Route path="projects" element={<Projects />} />
-                            </Routes>
+                            <Body />
                         </div>
                     </div>
                 </div>
