@@ -20,7 +20,7 @@
     height: auto;
     position: relative;
     top: 0px;
-    padding: 5px 5px 5px 0;
+    padding: 15px 5px 5px 0;
   }
 
   .sidebar .profile-img img {
@@ -85,7 +85,7 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 10px 20px 0 20px;
+    margin: 0 20px;
   }
   
   .profile-img {
