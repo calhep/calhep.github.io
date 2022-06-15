@@ -14,7 +14,7 @@ import '../footer.css'
 class Footer extends React.Component {
     render() {
         return (
-            <footer>
+            <div id="footer">
                 <ul>
                     <li>
                         <a href="https://github.com/calhep">
@@ -32,12 +32,10 @@ class Footer extends React.Component {
                         </a>
                     </li>
                 </ul>
-
                 <div id='copyright'>
                     Designed by Callum H. using React.
                 </div>
-
-            </footer>
+            </div>
         )
     }
 }

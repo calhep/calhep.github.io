@@ -1,15 +1,9 @@
-import React, { Component } from 'react'
+import React from "react";
 
-class Projects extends Component {
-    render() {
-        return (
-            <div className="header-pad">
-                <p>
-                    This is the projects page, where the projects are stored.
-                </p>
-            </div>
-        )
-    }
+export default function Projects() {
+    return (
+        <div>
+            Projects
+        </div>
+    );
 }
-
-export default Projects;

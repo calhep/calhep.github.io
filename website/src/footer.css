@@ -1,23 +1,23 @@
 #copyright {
     color: #bcbcbc;
     text-align: center;
-    margin: 2rem 0 0;
     font-size: .9rem;
   }
 
-  footer {
+  #footer {
     background: #1b1b1b;
-    padding: 2rem 0;
+    padding: 20px 0;
+    min-height: 118px;
   }
   
-  footer ul > li {
+  #footer ul > li {
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
   }
   
-  footer ul {
-    padding: 0
+  #footer ul {
+    padding: 0;
   }
   
   .fa-icon:hover {
