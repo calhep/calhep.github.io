@@ -1,0 +1,19 @@
+.project {
+    display: flex;
+}
+
+.project-section ul {
+    list-style: none;
+}
+
+.project-section .project-text {
+    display: block;
+}
+
+.project-section .project-image  {
+    display: inherit;
+    margin-left: auto
+}
+
+.project-section {
+}
