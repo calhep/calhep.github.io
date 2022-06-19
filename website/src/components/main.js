@@ -24,7 +24,7 @@ function Main() {
             <div className="wrapper">
                 <div className="sidebar">
                     <div className="profile-img">
-                        <img src="images/IMG_9120.png" alt="doggo" />
+                        <img src="images/profile.png" alt="doggo" />
                     </div>
                     <div className="profile-content">
                         <h3 className="profile-name">

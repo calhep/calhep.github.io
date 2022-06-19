@@ -6,14 +6,17 @@
     list-style: none;
 }
 
-.project-section .project-text {
+.project-section .project-description {
     display: block;
+    padding-right: 100px;
 }
 
-.project-section .project-image  {
+.project-section .project-media  {
     display: inherit;
-    margin-left: auto
+    margin-left: auto;
 }
 
-.project-section {
+.project-media img  {
+    width: 200px;
+    height: auto;
 }

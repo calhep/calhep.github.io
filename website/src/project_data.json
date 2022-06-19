@@ -2,25 +2,25 @@
     {
         "id": 0,
         "title": "compSPI",
-        "body": "abcdefg",
-        "image": "compspi"
+        "body": "compSPI is an algorithm benchmarking suite for cryogenic electron microscopy (cryo-EM) particle reconstruction. The project aims to accelerate the development of novel reconstruction methods while standardizing their performance. ",
+        "media": "image",
+        "filename": "compspi",
+        "link": "https://github.com/compSPI"
     },
     {
         "id": 1,
-        "title": "launchpad",
-        "body": "",
-        "image": ""
+        "title": "\"McQueen\" Simulated Robot",
+        "body": "As part of a team I developed a computer vision-based navigation algorithm that allowed a simulated robot to traverse a designated competition surface. The robot leveraged SIFT to gather license plates from passing vehicles, and a CNN to identify alphanumeric plate numbers. ",
+        "media": "image",
+        "filename": "compenv",
+        "link": "https://github.com/calhep/autonomous-control"
     },
     {
         "id": 2,
-        "title": "autonomous robot",
+        "title": "Can Collecting Robot",
         "body": "",
-        "image": ""
-    },
-    {
-        "id": 3,
-        "title": "ros simulation",
-        "body": "",
-        "image": ""
+        "media": "video",
+        "filename": "canrobot",
+        "link": ""
     }
 ]
