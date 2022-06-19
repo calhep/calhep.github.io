@@ -20,18 +20,12 @@ function Media(props) {
                 <source src={parseVideoUrl(props.filename)} type="video/mp4" />
             </video>
         );
-    };                          
+    };
     if (props.media === "image") {
         return (
             <img src={parseImgUrl(props.filename)} alt={props.filename} />
         );
     };
-
-    return (
-        <div>
-            {props.media}
-        </div>
-    )
 }
 
 

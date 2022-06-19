@@ -4,7 +4,7 @@ import { Link, useRoutes } from "react-router-dom";
 import '../main.css';
 
 // import doggo from "images/IMG_9120.png"
-import resume from "../resume/Callum_Hepworth_Resume.pdf"
+// import resume from "../resume/Callum_Hepworth_Resume.pdf"
 
 import Projects from './projects';
 import About from './about';
@@ -40,7 +40,7 @@ function Main() {
                         <ul>
                             <li><Link to="/">About Me</Link></li>
                             <li><Link to="/projects">Projects</Link></li>
-                            <li><a href={resume}>CV</a></li>
+                            <li><a href="pdfs/Callum_Hepworth_Resume.pdf">CV</a></li>
                         </ul>
                         <hr />
                     </div>
