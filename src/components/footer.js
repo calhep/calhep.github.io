@@ -33,7 +33,7 @@ class Footer extends React.Component {
                     </li>
                 </ul>
                 <div id='copyright'>
-                    Designed by Callum H. using React.
+                    Built by Callum H. using React.
                 </div>
             </div>
         )

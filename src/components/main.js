@@ -1,30 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useRoutes } from "react-router-dom";
 
 import '../main.css';
 
-// import doggo from "images/IMG_9120.png"
-// import resume from "../resume/Callum_Hepworth_Resume.pdf"
-
 import Projects from './projects';
 import About from './about';
 
+import Hamburger from 'hamburger-react'
+
+function Body() {
+    return useRoutes([
+        { path: "/", element: <About /> },
+        { path: "/about", element: <About /> },
+        { path: "/projects", element: <Projects /> }
+    ]);
+}
+
 function Main() {
 
-    const Body = () => {
-        return useRoutes([
-            { path: "/", element: <About /> },
-            { path: "/about", element: <About /> },
-            { path: "/projects", element: <Projects /> }
-        ]);
-    }
+    const [isOpen, setOpen] = useState(false);
 
     return (
         <div id="main">
             <div className="wrapper">
                 <div className="sidebar">
                     <div className="profile-img">
-                        <img src="images/profile.png" alt="doggo" />
+                        <img src="images/profile.png" alt="profile-pic" />
                     </div>
                     <div className="profile-content">
                         <h3 className="profile-name">
@@ -34,7 +35,22 @@ function Main() {
                             Engineering Physics Student at UBC
                         </p>
                     </div>
+
+                    <div className="dd">
+                        <div className="dd-menu" style={{ display: isOpen ? 'inherit' : 'none' }} id='hamburger-menu'>
+                            <Link onClick={() => setOpen(!isOpen)} to="/">About Me</Link>
+                            <Link onClick={() => setOpen(!isOpen)} to="/projects">Projects</Link>
+                            <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">CV</a>
+                        </div>
+
+                        <div className="dd-button">
+                            <Hamburger toggled={isOpen} toggle={setOpen} />
+                        </div>
+                    </div>
                 </div>
+
+                <hr className="mobile-divider" />
+
                 <div className="body">
                     <div className="sections">
                         <ul>
