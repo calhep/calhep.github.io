@@ -9,11 +9,15 @@
   }
 
   .sidebar .profile-img img {
-    max-width: 100px;
-}
+    max-width: calc(var(--max-width) * 0.15);
+  }
+
+  .wrapper .body {
+    width: calc(0.72 * var(--max-width))
+  }
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 768px) {
   .wrapper .sidebar {
     display: table-cell;
     width: auto;
@@ -59,6 +63,7 @@
 
   .body .body-content {
     padding-top: 0;
+    min-height: calc(81.6vh - var(--footer-height));
   }
 }
 
