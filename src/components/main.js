@@ -16,21 +16,7 @@ function Body() {
     ]);
 }
 
-
-
 function Main() {
-
-    const Links = () => {
-        return (
-            <div>
-
-
-                <Link onClick={() => setOpen(!isOpen)} to="/">About Me</Link>
-                <Link onClick={() => setOpen(!isOpen)} to="/projects">Projects</Link>
-                <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">CV</a>
-            </div>
-        )
-    }
 
     const [isOpen, setOpen] = useState(false);
 
@@ -39,7 +25,7 @@ function Main() {
             <div className="wrapper">
                 <div className="sidebar">
                     <div className="profile-img">
-                        <img src="images/profile.png" alt="doggo" />
+                        <img src="images/profile.png" alt="profile-pic" />
                     </div>
                     <div className="profile-content">
                         <h3 className="profile-name">
@@ -52,7 +38,9 @@ function Main() {
 
                     <div className="dd">
                         <div className="dd-menu" style={{ display: isOpen ? 'inherit' : 'none' }} id='hamburger-menu'>
-                            <Links />
+                            <Link onClick={() => setOpen(!isOpen)} to="/">About Me</Link>
+                            <Link onClick={() => setOpen(!isOpen)} to="/projects">Projects</Link>
+                            <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">CV</a>
                         </div>
 
                         <div className="dd-button">
