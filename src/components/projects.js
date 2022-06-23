@@ -27,7 +27,6 @@ function ProjectLink(props) {
     }
 }
 
-
 function Projects() {
     return (
         <div className="project-section">

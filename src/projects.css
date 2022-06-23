@@ -43,6 +43,7 @@
 
     .project-media img  {
         width: 70vw;
+        max-width: 300px;
         height: auto;
         display: block;
         margin: auto;
@@ -53,11 +54,11 @@
 
     .project-section .project-media {
         margin-left: inherit;
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
     }
 
     .project .project-description {
-        padding-right: 0;
+        padding: 10px 0 0 0;
         width: auto;
     }
 

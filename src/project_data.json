@@ -9,7 +9,7 @@
     },
     {
         "id": 1,
-        "title": "\"McQueen\" Simulated Robot",
+        "title": "\"McQueen\" Autonomous Robot",
         "body": "As part of a team I developed a computer vision-based navigation algorithm that allowed a simulated robot to traverse a designated competition surface. The robot leveraged SIFT to gather license plates from passing vehicles, and a CNN to identify alphanumeric plate numbers. ",
         "media": "image",
         "filename": "compenv",
