@@ -38,6 +38,10 @@
 
 @media (max-width: 768px) {
 
+  .sidebar .profile-content ul {
+    text-align: left;
+  }
+
   #main .mobile-divider {
     display: inherit;
   }
@@ -91,7 +95,7 @@
   }
 
   .sidebar .profile-img img {
-    max-width: 65px;
+    max-height: 100px;
   }
 
   .sidebar .profile-img {
@@ -106,6 +110,7 @@
     width: 100%  ;
     position: relative;
     padding-top: 0;
+    background-color: #1b1b1b;
   } 
 
   .sidebar .profile-content {
@@ -193,13 +198,15 @@
 
   .profile-text {
       font-size: 0.75rem;
+      margin-bottom: 0.5rem;
   }
   
 .sections {
     position: fixed;
-    z-index:10;
+    z-index: 10;
     padding-top: 75px;
     width: calc(0.72 * var(--max-width));
+    background-color: white;
 }
 
 .body-content {
@@ -226,15 +233,22 @@
     text-decoration: underline;
 }
 
-.header-mobile .profile-content {
-  padding-left: 15px;
+.profile-content .fa-icon {
+  color: #1b1b1b;
 }
 
-.header-mobile .profile-content .profile-name {
-  margin-bottom: 3px;
+.profile-content ul {
+  text-align: center;
+  list-style: inside;
+  padding-left: 0;
 }
 
-.header-mobile .profile-content .profile-text {
-  margin-bottom: 0;
+.profile-content ul > li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
+.bio-divider {
+  margin: 0.7rem 0;
+}
