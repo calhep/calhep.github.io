@@ -1,24 +1,12 @@
 import React, { useState } from 'react'
-import { Link, useRoutes } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import '../main.css';
-
-import Projects from './projects';
-import About from './about';
-
 import Hamburger from 'hamburger-react'
-
-function Body() {
-    return useRoutes([
-        { path: "/about", element: <About /> },
-        { path: "/projects", element: <Projects /> },
-        { path: "/", element: <About /> }
-    ]);
-}
 
 function Main() {
 
@@ -83,7 +71,7 @@ function Main() {
                         <hr />
                     </div>
                     <div className="body-content">
-                        <Body />
+                        <Outlet />
                     </div>
                 </div>
             </div>
