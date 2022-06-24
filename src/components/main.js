@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { Link, useRoutes } from "react-router-dom";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 import '../main.css';
 
 import Projects from './projects';
@@ -34,10 +38,28 @@ function Main() {
                         <p className="profile-text">
                             Engineering Physics Student at UBC
                         </p>
+                        <hr className="bio-divider"/>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/calhep">
+                                    <FontAwesomeIcon icon={faGithub} size='lg' className="fa-icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/callumhepworth/">
+                                    <FontAwesomeIcon icon={faLinkedin} size='lg' className="fa-icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:callumahepworth@gmail.com">
+                                    <FontAwesomeIcon icon={faSquareEnvelope} size='lg' className="fa-icon" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                     <div className="dd">
-                        <div className="dd-menu" style={{ display: isOpen ? 'inherit' : 'none' }} id='hamburger-menu'>
+                        <div className="dd-menu" style={{ display: isOpen ? 'inline-block' : 'none' }} id='hamburger-menu'>
                             <Link onClick={() => setOpen(!isOpen)} to="/">About Me</Link>
                             <Link onClick={() => setOpen(!isOpen)} to="/projects">Projects</Link>
                             <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">CV</a>
