@@ -1,11 +1,14 @@
 import React from "react";
 
-import '../main.css'
+import '../errorpage.css'
 
 function ErrorPage() {
     return (
-        <div>
-            404
+        <div className="error-container">
+            <h1>404</h1>
+            <p>
+                Whoops, address not defined.
+            </p>
         </div>
     );
 }

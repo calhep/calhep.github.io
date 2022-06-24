@@ -4,8 +4,7 @@ import './App.css';
 import { useRoutes} from "react-router-dom"
 
 import Main from './components/main'
-import Footer from './components/footer'
-// import ErrorPage from './components/errorpage';
+import ErrorPage from './components/errorpage';
 import About from './components/about';
 import Projects from './components/projects';
 
@@ -21,14 +20,13 @@ function App() {
         { path: '/projects', element: <Projects /> },
       ]
     },
-    // { path: '*', element: <ErrorPage /> }
+    { path: '*', element: <ErrorPage /> }
   ]);
 
 
   return (
     <div className="App">
       {element}
-      <Footer />
     </div>
   );
 }
