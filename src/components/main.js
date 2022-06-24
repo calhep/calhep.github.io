@@ -14,9 +14,9 @@ import Hamburger from 'hamburger-react'
 
 function Body() {
     return useRoutes([
-        { path: "/", element: <About /> },
         { path: "/about", element: <About /> },
-        { path: "/projects", element: <Projects /> }
+        { path: "/projects", element: <Projects /> },
+        { path: "/", element: <About /> }
     ]);
 }
 
