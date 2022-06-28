@@ -16,7 +16,7 @@ function About() {
             </p>
 
             <ul>
-                <li> A machine learning research intern at the SLAC National Accelerator Laboratory at Stanford University </li>
+                <li> A research intern at the SLAC National Accelerator Laboratory at Stanford University </li>
                 <li> A software developer intern at Validus Research Inc. in Waterloo, ON </li>
             </ul>
 
