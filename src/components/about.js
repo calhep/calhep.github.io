@@ -12,7 +12,7 @@ function About() {
                 My name's Callum, and I'm a fourth year engineering physics student at the University of British Columbia with a coursework focus in computer science and machine learning.
             </p>
             <p>
-                I'm always eager to expand on my coursework through internships, and am currently looking for opportunities for the Summer of 2023. In the past I've worked as:
+                I'm always eager to expand on my coursework through internships, and am currently looking for opportunities for the Summer of 2023. My past experiences include:
             </p>
 
             <ul>
