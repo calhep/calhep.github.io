@@ -21,10 +21,6 @@ function About() {
             </ul>
 
             <p>
-                In my spare time I enjoy practicing guitar and playing badminton, with a little daydreaming sprinkled inbetween.
-            </p>
-
-            <p>
                 Don't hesitate to reach out to me at <a href="mailto:callumahepworth@gmail.com">callumahepworth@gmail.com</a> if you'd like to chat or grab a coffee!
             </p>
         </div>
