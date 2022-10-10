@@ -68,7 +68,7 @@ function Main() {
                             <ul>
                                 <li><Link to="/">About Me</Link></li>
                                 <li><Link to="/projects">Projects</Link></li>
-                                <li><a href="pdfs/Callum_Hepworth_Resume.pdf">CV</a></li>
+                                <li><a href="pdfs/Callum_Hepworth_Resume.pdf">Resumé</a></li>
                             </ul>
                             <hr />
                         </div>
