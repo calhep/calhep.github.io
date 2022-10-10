@@ -52,7 +52,7 @@ function Main() {
                             <div className="dd-menu" style={{ display: isOpen ? 'inline-block' : 'none' }} id='hamburger-menu'>
                                 <Link onClick={() => setOpen(!isOpen)} to="/">About Me</Link>
                                 <Link onClick={() => setOpen(!isOpen)} to="/projects">Projects</Link>
-                                <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">CV</a>
+                                <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">Resumé</a>
                             </div>
 
                             <div className="dd-button">
