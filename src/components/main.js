@@ -52,7 +52,7 @@ function Main() {
                             <div className="dd-menu" style={{ display: isOpen ? 'inline-block' : 'none' }} id='hamburger-menu'>
                                 <Link onClick={() => setOpen(!isOpen)} to="/">About Me</Link>
                                 <Link onClick={() => setOpen(!isOpen)} to="/projects">Projects</Link>
-                                <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">Resumé</a>
+                                <a onClick={() => setOpen(!isOpen)} href="pdfs/Callum_Hepworth_Resume.pdf">Resume</a>
                             </div>
 
                             <div className="dd-button">
@@ -68,7 +68,7 @@ function Main() {
                             <ul>
                                 <li><Link to="/">About Me</Link></li>
                                 <li><Link to="/projects">Projects</Link></li>
-                                <li><a href="pdfs/Callum_Hepworth_Resume.pdf">Resumé</a></li>
+                                <li><a href="pdfs/Callum_Hepworth_Resume.pdf">Resume</a></li>
                             </ul>
                             <hr />
                         </div>
