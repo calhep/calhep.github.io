@@ -16,7 +16,7 @@ function About() {
             </p>
 
             <ul>
-                <li> A teaching assistant for data structures and algorithms in C/C++ for the UBC Department of Computer Science </li>
+                <li> A teaching assistant for data structures and algorithms for the UBC CS department</li>
                 <li> A research intern at the SLAC National Accelerator Laboratory at Stanford University </li>
                 <li> A software developer intern at Validus Research Inc. in Waterloo, ON </li>
             </ul>
